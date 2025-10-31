@@ -3,40 +3,38 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PLM Dashboard — DO-117</title>
   <link rel="stylesheet" href="styles.css" />
-  <script src="https://alcdn.msauth.net/browser/2.38.0/js/msal-browser.min.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <header class="site-header">
     <h1 class="app-title">PLM Dashboard — DO-117</h1>
-    <div class="header-controls">
+    <div class="header-controls inline">
       <label class="label" for="memberSelect">Member</label>
       <select id="memberSelect" aria-label="Active team member"></select>
     </div>
     <nav class="top-nav" aria-label="Primary">
       <a href="#/dashboard" class="nav-link" id="nav-dashboard">Dashboard</a>
-      <a href="#/tagup" class="nav-link" id="nav-tagup">Daily Tag-Up</a>
+      <a href="#/tagup" class="nav-link" id="nav-tagup">Daily Tag‑Up</a>
       <a href="#/tasks" class="nav-link" id="nav-tasks">Tasks</a>
       <a href="#/rfis" class="nav-link" id="nav-rfis">RFIs</a>
       <a href="#/risks" class="nav-link" id="nav-risks">Risks</a>
       <a href="#/tfr" class="nav-link" id="nav-tfr">TFR Tracker</a>
       <a href="#/settings" class="nav-link" id="nav-settings">Settings</a>
     </nav>
-    <div class="header-controls">
+    <div class="header-controls inline">
       <button id="themeToggle" class="ghost" type="button" aria-pressed="false" aria-label="Toggle dark mode">🌙</button>
     </div>
   </header>
 
-  <main id="app" tabindex="-1" aria-live="polite"></main>
+  <main id="app" tabindex="-1"></main>
 
   <footer class="site-footer">
-    <div id="status-line" aria-live="polite">Local time: --:-- CT | Week --</div>
-    <div id="conn-line" class="muted" aria-live="polite">Not connected</div>
+    <span id="clock"></span>
+    <span id="week" class="week-number"></span>
   </footer>
 
-  <div id="modal-root" hidden></div>
   <script src="app.js"></script>
 </body>
 </html>
