@@ -3,7 +3,16 @@
     const res = await fetch('dashboard-data.json');
     const data = await res.json();
     let { meta, teamMembers, tagups, tasks, rfis, risks, tfr } = data;
-    const memberSelect = document.getElementById('memberSelect');
+  // Add click handlers for nav links to ensure routing works
+  document.querySelectorAll('nav a').forEach(a => {
+    a.addEventListener('click', (ev) => {
+      ev.preventDefault();
+      const hash = a.getAttribute('href');
+      window.location.hash = hash;
+      renderCurrent();
+    });
+  });
+   const memberSelect = document.getElementById('memberSelect');
     const appEl = document.getElementById('app');
     function populateMembers() {
       memberSelect.innerHTML = '';
