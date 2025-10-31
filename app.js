@@ -12,6 +12,7 @@
     option.textContent = member.name;
     selectEl.appendChild(option);
   });
+
   selectEl.value = activeMemberId;
   selectEl.addEventListener('change', () => {
     activeMemberId = selectEl.value;
