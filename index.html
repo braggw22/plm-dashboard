@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>PLM Dashboard — DO-117 Scrum + Tag‑Up</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-dot"></span>
+      <span class="brand-text">PLM Dashboard</span>
+      <span class="brand-sub">DO‑117</span>
+    </div>
+    <nav class="topnav">
+      <a href="#/dashboard" id="nav-dashboard">Dashboard</a>
+      <a href="#/tagup" id="nav-tagup">Tag‑Up</a>
+      <a href="#/tasks" id="nav-tasks">Tasks</a>
+      <a href="#/rfis" id="nav-rfis">RFIs</a>
+      <a href="#/risks" id="nav-risks">Risks</a>
+      <a href="#/tfr" id="nav-tfr">TFR Tracker</a>
+      <a href="#/settings" id="nav-settings">Settings</a>
+    </nav>
+    <div class="mode-wrap">
+      <button id="modeToggle" class="btn secondary" aria-label="Toggle dark mode">☾</button>
+    </div>
+  </header>
+
+  <main id="app">
+    <!-- Routed views will render here -->
+  </main>
+
+  <footer class="footer">
+    <span>Week <span id="footerWeek"></span> • <span id="footerDate"></span></span>
+    <span>IndexedDB: <span id="footerDbState">initializing…</span></span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

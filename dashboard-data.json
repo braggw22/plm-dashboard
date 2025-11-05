@@ -1,0 +1,62 @@
+{
+  "tasks": [
+    {
+      "title": "Kickoff DO\u2011117 Sprint",
+      "owner": "Weston Bragg",
+      "due": "2025-11-10",
+      "priority": "High",
+      "notes": "Align with NAWCTSD stakeholders",
+      "done": false,
+      "createdAt": "2025-11-04T10:00:00"
+    },
+    {
+      "title": "Wiremap TR\u20115\u2011008",
+      "owner": "Gavin Lasater",
+      "due": "2025-11-08",
+      "priority": "Medium",
+      "notes": "Check LIU labels",
+      "done": false,
+      "createdAt": "2025-11-04T10:15:00"
+    }
+  ],
+  "rfis": [
+    {
+      "number": "001",
+      "title": "Ceiling penetration sleeves spec",
+      "status": "Open",
+      "owner": "Brian Burrer",
+      "notes": "UFC 3\u2011580\u201101 reference",
+      "createdAt": "2025-11-04T10:20:00"
+    }
+  ],
+  "risks": [
+    {
+      "title": "HVAC undersized for Level\u20111 classrooms",
+      "severity": "High",
+      "owner": "Chase Cole",
+      "status": "Mitigating",
+      "mitigation": "Use mechanical drawings to validate BTU/hr",
+      "createdAt": "2025-11-04T10:25:00"
+    }
+  ],
+  "tfrs": [
+    {
+      "title": "A005/001 TFR Rev\u201106",
+      "status": "In Progress",
+      "owner": "Weston Bragg",
+      "due": "2025-11-14",
+      "notes": "Bowhead\u2011blue tables",
+      "createdAt": "2025-11-04T10:30:00"
+    }
+  ],
+  "tagups": [
+    {
+      "member": "Holocom",
+      "date": "2025-11-04",
+      "yesterday": "Pulled 12 CAT6 in Bldg 738",
+      "today": "Terminate and test",
+      "blockers": "Awaiting room access",
+      "createdAt": "2025-11-04T10:35:00"
+    }
+  ]
+}
